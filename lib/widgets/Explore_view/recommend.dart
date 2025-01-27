@@ -6,7 +6,6 @@ import 'package:plants/widgets/plant_showcase.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import 'Recommend_widget.dart';
 
 class Recommendation extends StatefulWidget {
   @override

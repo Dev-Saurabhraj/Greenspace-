@@ -1,11 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:plants/pages/Search_bar.dart';
 import 'package:plants/widgets/banner.dart';
-import 'package:plants/pages/category.dart';
-import 'package:plants/widgets/bottom_navigation_bar.dart';
-import 'package:plants/widgets/recommend.dart';
+import 'package:plants/pages/category/category.dart';
+import 'package:plants/widgets/icons/bottom_navigation_bar.dart';
+import 'package:plants/widgets/Explore_view/recommend.dart';
 import 'package:provider/provider.dart';
 
 import '../provider/cart_provider.dart';

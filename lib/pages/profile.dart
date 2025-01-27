@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../widgets/bottom_navigation_bar.dart';
+import '../widgets/icons/bottom_navigation_bar.dart';
 
 class Profile extends StatelessWidget {
   @override

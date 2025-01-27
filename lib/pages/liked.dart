@@ -1,11 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:plants/widgets/bottom_navigation_bar.dart';
+import 'package:plants/widgets/icons/bottom_navigation_bar.dart';
 import 'package:provider/provider.dart';
 
 import '../provider/cart_provider.dart';
-import '../widgets/back_icon.dart';
+import '../widgets/icons/back_icon.dart';
 
 class Liked extends StatefulWidget{
   @override
@@ -27,7 +26,7 @@ class LikedPage extends  State<Liked>{
                         child: Text('Liked(${value.liked.length})', style:  TextStyle(fontWeight: FontWeight.bold, fontSize: 20,),)),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 70.0),
+                    padding: const EdgeInsets.only(top: 70.0, bottom: 60),
                     child: ListView.builder(itemBuilder: (BuildContext context, int index){
                       return Stack(
                           children:[
@@ -52,7 +51,7 @@ class LikedPage extends  State<Liked>{
                                       height: 160,
                                       width: 100,
                                       decoration: BoxDecoration(
-                                        color: Colors.blueGrey.withOpacity(.3)
+                                        color: Colors.blueGrey
                                         ,
                                         borderRadius: BorderRadius.circular(15),
 
@@ -102,7 +101,7 @@ class LikedPage extends  State<Liked>{
                                                       color: Colors.grey.shade200,
                                                       borderRadius: BorderRadius.circular(15)
                                                   ),
-                                                  child: Icon(CupertinoIcons.delete, color: Colors.red.withOpacity(.5), size: 30,
+                                                  child: Icon(CupertinoIcons.delete, color: Colors.red, size: 30,
                                                   ),
 
                                                 ),

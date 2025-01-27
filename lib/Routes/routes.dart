@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:plants/pages/cart_page.dart';
-import 'package:plants/pages/category_screen.dart';
+import 'package:plants/pages/cart/cart_page.dart';
+import 'package:plants/pages/category/category_screen.dart';
 import 'package:plants/pages/liked.dart';
 import 'package:plants/pages/profile.dart';
-import 'package:plants/widgets/category_details_widget1.dart';
+import 'package:plants/widgets/Plant_details_widget1.dart';
 
 
 import '../pages/error.dart';

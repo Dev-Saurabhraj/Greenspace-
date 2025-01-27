@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../data/details_screen_data.dart';
 
 class RecommendationWidget extends StatelessWidget {
   final String name;

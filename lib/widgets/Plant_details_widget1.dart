@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:plants/provider/cart_provider.dart';
 import 'package:readmore/readmore.dart';
-import 'back_icon.dart';
-import 'soft_icon.dart';
+import 'icons/back_icon.dart';
+import 'icons/soft_icon.dart';
 import '../data/details_screen_data.dart';
 import 'package:provider/provider.dart';
 
@@ -48,7 +48,7 @@ class DetailsScreen2State extends State<DetailsScreen2> {
                         width: 50,
                         decoration: BoxDecoration(
 
-                          color: Colors.white.withOpacity(0.7),
+                          color: Colors.white,
                           borderRadius: BorderRadius.circular(25),
                           boxShadow: [BoxShadow( blurStyle: BlurStyle.outer, blurRadius: 1,)]
                         ),
@@ -331,7 +331,7 @@ class DetailsScreen2State extends State<DetailsScreen2> {
                 height: 50,
                 width: 185,
                 decoration:BoxDecoration(
-                  gradient: LinearGradient(colors: [Colors.green.shade900,Colors.green.shade900, Colors.green.withOpacity(0.5)], begin: Alignment.topLeft, end: Alignment.bottomRight),
+                  gradient: LinearGradient(colors: [Colors.green.shade900,Colors.green.shade900, Colors.green], begin: Alignment.topLeft, end: Alignment.bottomRight),
                   color: Colors.green.shade400,
                   borderRadius: BorderRadius.circular(50),
 

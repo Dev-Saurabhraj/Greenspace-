@@ -5,7 +5,7 @@ import '../data/details_screen_data.dart';
 class CartProvider extends ChangeNotifier{
 final List cart = [];
 final List liked = [];
- final List count = [1];
+
 
 
  num subTotal = 0;
@@ -32,13 +32,17 @@ void addToCart(String name){
 
 }
 void decrementCounter(String name){
-if(count.last > 1 ){ count.removeLast();}
-notifyListeners();
-
+  for (var item in cart) {
+    if (item.name == name){
+      item.count++;}}
+   //cart.firstWhere((element)=> element.name == name).count++;
+   notifyListeners();
 }
 
+
 void incrementCounter(String name){
-if(count.last<=9) count.add(count.last + 1);
+
+cart.firstWhere((element)=> element.name == name).count--;
 notifyListeners();
 }
 
